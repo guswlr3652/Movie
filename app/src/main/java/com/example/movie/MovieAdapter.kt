@@ -38,7 +38,7 @@ class MovieAdapter(val context: Context, val movieList: ArrayList<Movie>) : Recy
         val tvPopularity = itemView.findViewById<TextView>(R.id.tvPopularity)
         val tvDescription = itemView.findViewById<TextView>(R.id.tvDescription)
         val tvOpenDate = itemView.findViewById<TextView>(R.id.tvOpenDate)
-        val container = itemView.findViewById<ConstraintLayout>(R.id.imgPoster)
+        val container = itemView.findViewById<ConstraintLayout>(R.id.container)
 
         fun bind(movie: Movie) {
             imgPoster.setImageResource(movie.posterUrl)

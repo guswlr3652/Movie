@@ -2,12 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/imgPoster"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="120dp">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgPoster"
         android:layout_width="64dp"
         android:layout_height="100dp"
         android:layout_marginStart="10dp"
@@ -26,7 +26,7 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgPoster"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -39,7 +39,7 @@
         android:textColor="#000000"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgPoster"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_marginTop="4dp"
         android:text="설명"
         android:textSize="13dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgPoster"
         app:layout_constraintTop_toBottomOf="@+id/tvPopularity" />
 
     <TextView
@@ -61,6 +61,6 @@
         android:layout_marginTop="4dp"
         android:text="개봉일"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgPoster"
         app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
